@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #14213D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#head{
+    position: absolute;
+    top: 0;
+    font-size: 3rem;
+    color: #FCA311;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.game {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: aquamarine; */
+
+}
+
+button {
+    height: 18vh;
+    width: 9vw;
+    border-radius: 5px;
+    border: none;
+    background-color: #a8dadc;
+    color: #FCA311;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+    transform: scale(1);
+}
+
+.logo{
+    transform: scale(1);
+}
+
+.logo:hover{
+    transform: scale(1.04);
+
+}
+
+button:hover{
+    transform: scale(1.04);
+    /* background-color: brown; */
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding-top: 1vh;
+
+}
+
+#reset button{
+    height: 8vh;
+    width: 15vw;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+    background-color: #FCA311;
+}
+
+.new-game{
+    height: 8vh;
+    width: 15vw;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+    background-color: #FCA311;
+    margin-bottom: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+.winner-msg{
+    height: 8vh;
+    width: 15vw;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+    background-color: #FCA311;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+}
+
+@media screen and (orientation: portrait) {
+    main{
+       width: 90%;
+    }
+
+    button {
+        height: 18vh;
+        width: 33vw;
+        border-radius: 5px;
+        border: none;
+        background-color: #a8dadc;
+        color: #FCA311;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 7rem;
+    }
+
+    .winner-msg{
+        height: 8vh;
+        width: 90vw;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: black;
+        background-color: #FCA311;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 5px;
+    }
+
+    .new-game{
+        height: 8vh;
+        width: 90vw;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: black;
+        background-color: #FCA311;
+        margin-bottom: 5px;
+    }
+    
+    #reset button{
+        height: 8vh;
+        width: 90vw;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: black;
+        background-color: #FCA311;
+    }
+    
+}
+
+@media screen and (max-width: 860px){
+    main{
+        width: 90%;
+     }
+ 
+     button {
+         height: 18vh;
+         width: 33vw;
+         border-radius: 5px;
+         border: none;
+         background-color: #a8dadc;
+         color: #FCA311;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 7rem;
+     }
+ 
+     .winner-msg{
+         height: 8vh;
+         width: 90vw;
+         font-size: 2.5rem;
+         font-weight: bolder;
+         color: black;
+         background-color: #FCA311;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-top: 50px;
+         margin-bottom: 5px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         border-radius: 5px;
+     }
+ 
+     .new-game{
+         height: 8vh;
+         width: 90vw;
+         font-size: 2.5rem;
+         font-weight: bolder;
+         color: black;
+         background-color: #FCA311;
+         margin-bottom: 5px;
+     }
+     
+     #reset button{
+         height: 8vh;
+         width: 90vw;
+         font-size: 2.5rem;
+         font-weight: bolder;
+         color: black;
+         background-color: #FCA311;
+     }
+}
+
+.logo{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
